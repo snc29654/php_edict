@@ -24,5 +24,5 @@ if(isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 
   $result = $db->query("select * from items where word='$str' ");
   while ($row = $result->fetchArray()) {
-    print_r($row);
+    print_r($row['mean']);
   }
